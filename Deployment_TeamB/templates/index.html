@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamB Deployment</title>
+    <style>
+        body{
+            text-align: center;}
+        h1 { color:blue}
+        label { color:firebrick}
+
+        input[type=submit] {
+            padding:5px 15px; 
+            background:#ccc; 
+            border:0 none;
+            cursor:pointer;
+            -webkit-border-radius: 5px;
+            border-radius: 5px; 
+            background-color: lightseagreen;
+        }
+    </style>
+</head>
+<body>
+    
+<div > 
+   <h1 > Predicting market Volatilty based on Twitter Headlines  </h1> 
+   
+   <form  action="/" method="POST">
+        <input type="radio" name="ChooseModel" id="Sentimental" value="Sentimental">
+        <label for="Sentimental">Sentiment Model</label>
+        <input type="radio" name="ChooseModel" id="StockData" value="StockData">
+        <label for="StockData">Stock Data Model</label><br><br>
+        <h2>Sentiment Model</h2>
+        <p>
+            Enter Any sentiment
+        </p>
+        <textarea id="w3review" name="sentiment" placeholder="write your text" rows="5" cols="70"> </textarea> <br> <br>
+        <h2>Stock Data Model</h2>
+        <p>
+            Enter Day and Month
+        </p>
+        <input type="number" name="day" placeholder="write Day">
+        <input type="number" name="month"  placeholder="write Month" ><br> <br> <br>
+        <input type="submit">
+   </form>
+   
+   <h3>The predicted market Volatilty is : {{Sscore}} </h3> 
+   
+   
+</div>
+
+</body>
+</html>

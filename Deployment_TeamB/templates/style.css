@@ -1,0 +1,20 @@
+body{
+    background-image:  url("../images/img10.png");
+    text-align: center;
+    
+    
+    
+}
+
+h1 { color:blue}
+label { color:firebrick}
+
+input[type=submit] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+    background-color: lightseagreen;
+}
